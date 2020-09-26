@@ -18,10 +18,10 @@ header h1{ /*NEED HELP: Needed to add an 'a' to reference the a tag in the HTML 
     display: inline;
 }
 
-/*header a{
+header h1 a{
     text-decoration: none;
     color: #fce138;
-}*/
+}
 
 /*style to the nav element and moved it to the right side of the page*/
 header nav{
