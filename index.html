@@ -36,7 +36,40 @@
                 <h3>Get Started Today</h3>
                 <p>Fill out thsi form and one of our trainers will schedule a consult</p>
             <!--Add form elelment-->
-            <form action=""></form>
+            <form>
+                <!--SYNTAX NOTE: the order of the label/input does matter. It will either display the label first on the webpage or it will display the input. This matters for inputs like Yes/No's and Checkboxes-->
+                <!--this is a text input for full name-->
+                <label for="name">Enter full name:</label>
+                <input type="text" placeholder="Your Name" name="name" id="name" />
+                <!--this is a text input for email-->
+                <label for="email">Enter email address:</label>
+                <input type="email" placeholder="Email Address" name="email" id="email" />
+                <!--this is a text input for phone number-->
+                <label for="phone">Enter a telephone number:</label>
+                <input type="tel" placeholder="Phone Number" name="phone" id="phone" />
+                <!--Because the radio button are inline elements, the answer selections will render from left to right on the same line as our question. The text fields are also
+                inline, so we need to create a new line using a <p> tag, which allows us to style this section (unlike a line break <br>)-->
+                <p>
+                    Have you worked out with a trainer before?
+                    <!--this is a radio button input for yes to the above question-->
+                    <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                    <label for="trainer-yes">Yes</label>
+                    <!--this is a radio button input for no to the above question-->
+                    <input type="radio" name="trainer-confirm" id="trainer-no" />
+                    <label for="trainer-no">No</label>
+                </p>
+                <!--this is a new section that will include a checkbox input, also separated with a <p> tag due to the inline element-->
+                <p>
+                    <label for="checkbox">I acknowledge that I am at least 18 years of age.</label>
+                    <input type="checkbox" name="age-confirm" id="checkbox"/>   
+                </p>
+                <!--this is a new section for the submit button-->
+                <p>
+                    <button type="submit">
+                        Get running!
+                    </button>
+                </p>
+            </form>
             </div>
         </section>
 

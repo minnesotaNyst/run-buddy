@@ -10,7 +10,7 @@ header{
 }
 
 /*apply style to the h1 tag in the <header>*/
-header h1{ /*NEED HELP: Needed to add an 'a' to reference the a tag in the HTML file. Also, this doesn't resolve the underlined link in the web page. Section 1.2.7 in the module.*/
+header h1 { /*NEED(ed) HELP: Needed to add an 'a' to reference the a tag in the HTML file. Also, this doesn't resolve the underlined link in the web page. Section 1.2.7 in the module.*/
     font-weight: bold;
     font-size: 36px;
     color: #fce138;
@@ -18,7 +18,7 @@ header h1{ /*NEED HELP: Needed to add an 'a' to reference the a tag in the HTML 
     display: inline;
 }
 
-header h1 a{
+header a{
     text-decoration: none;
     color: #fce138;
 }
