@@ -2,13 +2,11 @@ body{
     color: #39a6b2;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 /*apply styles to <header>*/
 header{
     padding: 20px 35px;
     background-color: #39a6b2;
 }
-
 /*apply style to the h1 tag in the <header>*/
 header h1 { /*NEED(ed) HELP: Needed to add an 'a' to reference the a tag in the HTML file. Also, this doesn't resolve the underlined link in the web page. Section 1.2.7 in the module.*/
     font-weight: bold;
@@ -17,43 +15,36 @@ header h1 { /*NEED(ed) HELP: Needed to add an 'a' to reference the a tag in the 
     margin: 0;
     display: inline;
 }
-
 header a{
     text-decoration: none;
     color: #fce138;
 }
-
 /*style to the nav element and moved it to the right side of the page*/
 header nav{
     float: right;
     margin: 7px 0;
 }
-
 /*styled the list and displayed inline*/
 header nav ul li{
     display: inline;
 }
-
 /*styled the a elements in the header list*/
 header nav ul li a{
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
 }
-
 /*add padding to the very top of the style sheet*/
 *{
     margin: 0;
     padding: 0;
 }
-
 /*add style to the footer section*/
 footer{
     background: #fce138;
     width: 100%; 
     padding: 40px 35px;
 }
-
 /*apply style to the left h2 elelment*/
 footer h2{
     display: inline;
@@ -61,22 +52,42 @@ footer h2{
     font-size: 30px;
     margin:0;
 }
-
 /*apply style to the right div container that holds the rest of the content*/
 footer div{
     float: right;
     line-height: 1.5;
     text-align: right;
 }
-
 /*apply style to the <a> elelment*/
 footer a{
     color: #024e76;
 }
-
 /*need to tell the roswer to ignore the padding in the overall width*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/*style to all sections*/
+section{
+    padding: 60px;
+}
+/*hero style section*/
+.hero{
+    background-image: url("../images/hero-bg.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+/*hero form style div*/
+.hero-form{
+    background-color: #fce138;
+    padding: 20px;
+    width: 500px;
+    color: #024e76;
+    border: 3px solid #024e76;
+    position: absolute;
+    bottom: 120px;
+    right: 140px;
 }
