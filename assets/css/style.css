@@ -3,13 +3,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Apply styles to <header>*/
+/*apply styles to <header>*/
 header{
     padding: 20px 35px;
     background-color: #39a6b2;
 }
 
-/*Apply style to the h1 tag in the <header>*/
+/*apply style to the h1 tag in the <header>*/
 header h1{ /*NEED HELP: Needed to add an 'a' to reference the a tag in the HTML file. Also, this doesn't resolve the underlined link in the web page. Section 1.2.7 in the module.*/
     font-weight: bold;
     font-size: 36px;
@@ -23,26 +23,60 @@ header h1{ /*NEED HELP: Needed to add an 'a' to reference the a tag in the HTML 
     color: #fce138;
 }*/
 
-/*St to the nav element and moved it to the right side of the page*/
+/*style to the nav element and moved it to the right side of the page*/
 header nav{
     float: right;
     margin: 7px 0;
 }
 
-/*Styled the list and displayed inline*/
+/*styled the list and displayed inline*/
 header nav ul li{
     display: inline;
 }
 
-/*Styled the a elements in the header list*/
+/*styled the a elements in the header list*/
 header nav ul li a{
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
 }
 
-/*Add padding to the very top of the style sheet*/
+/*add padding to the very top of the style sheet*/
 *{
     margin: 0;
     padding: 0;
+}
+
+/*add style to the footer section*/
+footer{
+    background: #fce138;
+    width: 100%; 
+    padding: 40px 35px;
+}
+
+/*apply style to the left h2 elelment*/
+footer h2{
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin:0;
+}
+
+/*apply style to the right div container that holds the rest of the content*/
+footer div{
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+
+/*apply style to the <a> elelment*/
+footer a{
+    color: #024e76;
+}
+
+/*need to tell the roswer to ignore the padding in the overall width*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
