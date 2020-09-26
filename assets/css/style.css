@@ -10,9 +10,32 @@ header{
 }
 
 /*Apply style to the h1 tag in the <header>*/
-header h1{
+header h1{ /*NEED HELP: Needed to add an 'a' to reference the a tag in the HTML file. Also, this doesn't resolve the underlined link in the web page. Section 1.2.7 in the module.*/
     font-weight: bold;
     font-size: 36px;
     color: #fce138;
     margin: 0;
+}
+
+/*header a{
+    text-decoration: none;
+    color: #fce138;
+}*/
+
+/*St to the nav element and moved it to the right side of the page*/
+header nav{
+    float: right;
+    margin: 7px 0;
+}
+
+/*Styled the list and displayed inline*/
+header nav ul li{
+    display: inline;
+}
+
+/*Styled the a elements in the header list*/
+header nav ul li a{
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
 }
