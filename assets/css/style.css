@@ -72,6 +72,10 @@ footer a{
 section{
     padding: 60px;
 }
+/*THIS WAS MY OWN ADDITION. I WAS USING THE CHROME DEV TOOLS AND FOUND THAT THIS MARGIN CLASS WOULD PRESENT THE WEBPAGE IN A BETTER WAY*/
+.margin{
+    margin:  20px;
+}
 .text-left {
     text-align: left;
 }
@@ -83,10 +87,10 @@ section{
 /*HERO STYLE SECTION START*/
 .hero{
     background-image: url("../images/hero-bg.jpg");
-    height: 600px;
     background-size: cover;
     background-position: center;
     position: relative;
+    height: 600px;
 }
 /*hero form style div*/
 .hero-form{
