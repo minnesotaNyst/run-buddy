@@ -1,8 +1,4 @@
-/*add padding to the very top of the style sheet*/
-*{
-    margin: 0;
-    padding: 0;
-}
+/*----WHOLE PAGE----*/
 /*need to tell the broswer to ignore the padding in the overall width*/
 *{
     margin: 0;
@@ -10,17 +6,20 @@
     box-sizing: border-box;
 }
 
+/*BODY STYLE STARTS*/
 body{
     color: #39a6b2;
     font-family: Arial, Helvetica, sans-serif;
 }
-/*apply styles to <header>*/
+/*-BODY STYLE ENDS-*/
+
+/*HEADER STYLE STARTS*/
 header{
     padding: 20px 35px;
     background-color: #39a6b2;
 }
 /*apply style to the h1 tag in the <header>*/
-header h1 { /*NEED(ed) HELP: Needed to add an 'a' to reference the a tag in the HTML file. Also, this doesn't resolve the underlined link in the web page. Section 1.2.7 in the module.*/
+header h1 {
     font-weight: bold;
     font-size: 36px;
     color: #fce138;
@@ -46,22 +45,13 @@ header nav ul li a{
     font-weight: lighter;
     font-size: 22px;
 }
+/*-HEADER STYLE ENDS-*/
 
-/*style to all sections*/
+/*SECTION STYLE STARTS*/
 section{
     padding: 60px;
 }
-/*THIS WAS MY OWN ADDITION. I WAS USING THE CHROME DEV TOOLS AND FOUND THAT THIS MARGIN CLASS WOULD PRESENT THE WEBPAGE IN A BETTER WAY*/
-.margin{
-    margin:  20px;
-}
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
+/*-SECTION STYLE ENDS-*/
 
 /*HERO STYLE SECTION START*/
 .hero{
@@ -111,7 +101,7 @@ section{
   }
 /*HERO STYLE SECTION ENDS*/
 
-/*Creating section style (what we/you do) to avoid duplicating code...*/
+/*WHAT WE/YOU DO SECTION STYLE START*/
 .section-title {
     font-size: 55px;
     color: #024e76;
@@ -120,14 +110,22 @@ section{
     display: inline-block;
     border-bottom: 3px solid;
 }
-
 .primary-border {
     border-color: #fce138;
 }
-
 .secondary-border {
     border-color: #39a6b2;
 }
+.margin{
+    margin:  20px;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+/*-WHAT WE/YOU DO SECTION STYLE ENDS-*/
 
 /*WHAT WE DO STYLE SECTION*/
 .intro{
@@ -140,7 +138,7 @@ section{
     font-size: 20px;
     margin: 0 auto;
 }
-/*WHAT WE DO STYLE SECTION ENDS*/
+/*-WHAT WE DO STYLE SECTION ENDS-*/
 
 /*WHAT YOU DO STYLE SECTION*/
 .steps{
@@ -166,7 +164,7 @@ section{
 .steps span{
     font-size: 36px;
 }
-/*WHAT YOU DO STYLE SECTION ENDS*/
+/*-WHAT YOU DO STYLE SECTION ENDS-*/
 
 /*TRAINERS STYLE SECTION STARTS*/
 .trainers{
@@ -201,7 +199,7 @@ section{
     font-size: 17px;
     line-height: 1.3;
 }
-/*TRAINERS STYLE SECTION ENDS*/
+/*-TRAINERS STYLE SECTION ENDS-*/
 
 /*REACH OUT STYLE SECTION STARTS*/
 .contact{
@@ -227,20 +225,18 @@ section{
     color: #fce138;
     font-size: 32px;
 }
-
 .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
     font-size: 20px;
     font-style: normal;
 }
-
 .contact-info a {
     color: #fce138;
 }
-/*REACH OUT STYLE SECTION ENDS*/
+/*-REACH OUT STYLE SECTION ENDS-*/
 
-/*add style to the footer section*/
+/*FOOTER STYLE SECTION START*/
 footer{
     background: #fce138;
     width: 100%; 
@@ -263,3 +259,4 @@ footer div{
 footer a{
     color: #024e76;
 }
+/*-FOOTER STYLE SECTION ENDS-*/
