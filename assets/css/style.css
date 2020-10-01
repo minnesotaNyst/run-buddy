@@ -1,3 +1,15 @@
+/*add padding to the very top of the style sheet*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*need to tell the broswer to ignore the padding in the overall width*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     color: #39a6b2;
     font-family: Arial, Helvetica, sans-serif;
@@ -34,40 +46,7 @@ header nav ul li a{
     font-weight: lighter;
     font-size: 22px;
 }
-/*add padding to the very top of the style sheet*/
-*{
-    margin: 0;
-    padding: 0;
-}
-/*add style to the footer section*/
-footer{
-    background: #fce138;
-    width: 100%; 
-    padding: 40px 35px;
-}
-/*apply style to the left h2 elelment*/
-footer h2{
-    display: inline;
-    color: #024e76;
-    font-size: 30px;
-    margin:0;
-}
-/*apply style to the right div container that holds the rest of the content*/
-footer div{
-    float: right;
-    line-height: 1.5;
-    text-align: right;
-}
-/*apply style to the <a> elelment*/
-footer a{
-    color: #024e76;
-}
-/*need to tell the broswer to ignore the padding in the overall width*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 /*style to all sections*/
 section{
     padding: 60px;
@@ -260,3 +239,27 @@ section{
     color: #fce138;
 }
 /*REACH OUT STYLE SECTION ENDS*/
+
+/*add style to the footer section*/
+footer{
+    background: #fce138;
+    width: 100%; 
+    padding: 40px 35px;
+}
+/*apply style to the left h2 elelment*/
+footer h2{
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin:0;
+}
+/*apply style to the right div container that holds the rest of the content*/
+footer div{
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+/*apply style to the <a> elelment*/
+footer a{
+    color: #024e76;
+}
