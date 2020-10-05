@@ -17,14 +17,16 @@ body{
 header{
     padding: 20px 35px;
     background-color: #39a6b2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 /*apply style to the h1 tag in the <header>*/
 header h1 {
     font-weight: bold;
+    margin: 0;
     font-size: 36px;
     color: #fce138;
-    margin: 0;
-    display: inline;
 }
 header a{
     text-decoration: none;
@@ -32,7 +34,6 @@ header a{
 }
 /*style to the nav element and moved it to the right side of the page*/
 header nav{
-    float: right;
     margin: 7px 0;
 }
 /*styled the list and displayed inline*/
