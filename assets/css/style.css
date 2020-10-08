@@ -28,6 +28,8 @@ header{
     background-position: center;
     background-attachment: fixed;
     background-position: 80%;
+    /* this property is added to keep the header element stacked on top */
+    z-index: 9999;
 }
 /*apply style to the h1 tag in the <header>*/
 header h1 {
@@ -116,6 +118,65 @@ section{
     width: 100%;
     margin-bottom: 15px;
     background-color: rgba(255, 255, 255, 0.75);
+}
+/* custom checkbox buttons */
+.checkbox-wrapper input, .radio-wrapper input {
+  opacity: 0;
+}
+.checkbox-wrapper label, .radio-wrapper label {
+  position: relative;
+  left: 10px;
+  margin: 10px;
+  line-height: 1.6;
+}
+.radio-wrapper label::before {
+  border-radius: 50%;
+}
+/* pseudo checkbox buttons */
+.checkbox-wrapper label::before, .radio-wrapper label::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: rgba(255, 255, 255, 0.75);  
+  border: 1px solid #024e76;  
+  position: absolute;
+  top: -4px;
+  left: -30px;
+}
+.radio-wrapper label::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #024e76;
+  position: absolute;
+  left: -29px;
+  top: -3px;
+  /* this applies gradient to the radio button after it has been clicked */
+  background-image: radial-gradient(circle, #39a6b2, #024e76);
+}
+
+.checkbox-wrapper label::after {
+  content: "";
+  height: 6px;
+  width: 14px;
+  /* these two properties create a border that looks like a backwards L */
+  border-left: 2px solid #024e76;
+  border-bottom: 2px solid #024e76;
+  position: absolute;
+  left: -26px;
+  top: 1px;
+  /* this property rotates the backwards L to look like a checkmark */
+  transform: rotate(-58deg);
+}
+/* the next two classes help determine what the radio button and checkbox look like after they are selected */
+.checkbox-wrapper input + label::after, 
+.radio-wrapper input + label::after {
+  content: none;
+}
+.checkbox-wrapper input:checked + label::after, 
+.radio-wrapper input:checked + label::after {
+  content: "";
 }
 /* focus pseudo */
 .form-input:focus {
