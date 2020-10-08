@@ -60,6 +60,13 @@ header nav ul li a{
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+/* hover pseudo */
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
 /*-HEADER STYLE ENDS-*/
 
 /*SECTION STYLE STARTS*/
@@ -119,6 +126,10 @@ section{
     border-radius: 10px;
     padding: 10px 20px;
     font-size: 16px;
+}
+/* hover pseudo */
+.hero-form button:hover {
+  background-color: #39a6b2;  
 }
 .hero-cta {
     width: 35%;
@@ -401,6 +412,7 @@ footer a{
     header {
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
       }
     
       header h1 {
