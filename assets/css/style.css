@@ -356,11 +356,6 @@ section{
     justify-content: center;
 }
   .service-grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-}
-  .service-grid-container {
     background: lightyellow;
     width: 80%;
     display: grid;
@@ -393,9 +388,9 @@ section{
 .service-grid-item.basic {
     grid-column: 2 / span 1;
   }
-  .service-grid-item.both {
-    grid-column: 2 / span 2;
-  }
+.service-grid-item.both {
+  grid-column: 2 / span 2;
+}
 /* -SERVICE PLANS STYLE SECTIONS ENDS */
 
 /*REACH OUT STYLE SECTION STARTS*/
